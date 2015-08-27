@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click1"
+            android:text="按钮1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_test"
+            android:onClick="click2"
+            android:text="按钮2" />
+
+        <!--
+         <ImageView
+        android:id="@+id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <com.tabhost.view.MyNetworkImageView
+        android:id="@+id/nimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        -->
+<ListView 
+    android:id="@+id/commentListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

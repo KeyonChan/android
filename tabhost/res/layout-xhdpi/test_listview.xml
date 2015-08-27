@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tvTop_index"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="listview混合布局"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+    <com.tabhost.view.XListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

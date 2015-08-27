@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/toptext"
+        style="@style/top_text"
+        android:text="第三个" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.tabhost.view.XListView
+            android:id="@+id/testListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000" >
+        </com.tabhost.view.XListView>
+
+        <Button
+            android:id="@+id/reload"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@color/top"
+            android:gravity="center"
+            android:onClick="reload"
+            android:text="重新加载"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

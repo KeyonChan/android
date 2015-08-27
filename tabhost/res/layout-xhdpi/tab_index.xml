@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_bg"
+        android:orientation="vertical" >
+
+        
+                    <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/top"
+                android:padding="7dp" >
+
+                <TextView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/search"
+                    android:drawableRight="@drawable/voice"
+                    android:layout_centerInParent="true"
+                    android:background="#FF6347"
+                    android:text="请输入商品名称    "
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/publish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="发表"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+
+        <com.tabhost.view.SlideShowView
+            android:id="@+id/slideshowView"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="显示" />
+
+            <Button
+                android:id="@+id/hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="hide"
+                android:text="隐藏" />
+
+            <Button
+                android:id="@+id/click3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="click3"
+                android:text="点击" />
+
+            <Button
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="share"
+                android:text="分享" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test2" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test2" />
+    </LinearLayout>
+
+</ScrollView>

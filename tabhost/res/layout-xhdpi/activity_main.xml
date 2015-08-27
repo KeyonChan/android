@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:background="#ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" />
+        
+		<!-- =======FrameLayout为了使用TextView显示消息数量======= -->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/full_border">
+
+            <RadioGroup
+                android:id="@+id/tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <!-- =============要设置background，否则4.0会错位============= -->
+                <RadioButton
+                    android:id="@+id/tab_index"
+                    style="@style/tab"
+                    android:checked="true"
+                    android:drawableTop="@drawable/tab_index"
+                    android:text="首页" />
+
+                <RadioButton
+                    android:id="@+id/tab_second"
+                    style="@style/tab"
+                    android:drawableTop="@drawable/tab_second"
+                    android:text="第二个" />
+
+                <RadioButton
+                    android:id="@+id/tab_third"
+                    style="@style/tab"
+                    android:drawableTop="@drawable/tab_third"
+                    android:text="第三个" />
+
+                <RadioButton
+                    android:id="@+id/tab_setting"
+                    style="@style/tab"
+                    android:drawableTop="@drawable/tab_setting"
+                    android:text="我的" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/msg_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginLeft="70dip"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/tips"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/toptext"
+        style="@style/top_text"
+        android:text="设置" />
+    <!-- ========================== 头像栏 ===================== -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_headphotoItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_border"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/full_border"
+                    android:drawableRight="@drawable/angle" />
+
+                <ImageView
+                    android:id="@+id/headphoto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="60dp"
+                    android:maxWidth="60dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/default_headphoto" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/headphoto"
+                    android:text="用户名XXX"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/headphoto"
+                    android:text="1000元"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- ========================== 我的订单 ===================== -->
+
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_setting_item_top"
+                android:drawableLeft="@drawable/order_setting"
+                android:drawableRight="@drawable/angle"
+                android:gravity="center_vertical"
+                android:text="    我的订单"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/collection"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/collection_setting"
+                android:drawableRight="@drawable/angle"
+                android:gravity="center_vertical"
+                android:text="    我的收藏"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/coupon"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/border_setting_item_bottom"
+                android:drawableLeft="@drawable/coupon_setting"
+                android:drawableRight="@drawable/angle"
+                android:gravity="center_vertical"
+                android:text="    我的优惠券"
+                android:textSize="20sp" />
+
+            <!-- ========================== 检查更新 ===================== -->
+
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_setting_item_top"
+                android:drawableLeft="@drawable/suggestion_setting"
+                android:drawableRight="@drawable/angle"
+                android:gravity="center_vertical"
+                android:text="    检查更新"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/delete_setting"
+                android:drawableRight="@drawable/angle"
+                android:gravity="center_vertical"
+                android:text="    清除缓存"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/contactus"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/border_setting_item_bottom"
+                android:drawableLeft="@drawable/contactus_setting"
+                android:drawableRight="@drawable/angle"
+                android:gravity="center_vertical"
+                android:text="    联系我们"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@color/top"
+                android:gravity="center"
+                android:onClick="logout"
+                android:text="注 销"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

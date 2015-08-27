@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTop_index"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/username"
+            android:hint="用户名，字母数字6-10位" 
+            android:text="abc"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/password"
+            android:inputType="textPassword"
+            android:hint="密码，字母数字6-10位" 
+            android:text="123456"/>
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/password"
+            android:inputType="textPassword"
+            android:hint="确认密码" 
+            android:text="123456"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/top"
+            android:gravity="center"
+            android:onClick="submit"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>
